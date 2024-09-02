@@ -1,0 +1,19 @@
+{
+    "name": "character-menu",
+    "main": "index.html",
+    "dependencies": {
+        "typescript": "^1.8.10"
+    },
+    "version": "1.0.0",
+    "devDependencies": {
+        "http-server": "^14.1.1"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "npm run tsc && http-server",
+        "tsc": "tsc"
+    },
+    "author": "",
+    "license": "UNLICENSED",
+    "description": ""
+}
