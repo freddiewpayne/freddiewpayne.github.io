@@ -3,16 +3,17 @@
     --primary-blue-semitransparent: #4d92bcaa;
     --warm-white: #fcf5ed;
     --grey: #cccccc;
+    --grey-semitransparent: #cccccc4d;
     --dark-semitransparent: #3e4c55ad;
 
-    --font-size-s: 12pt;
+    --font-size-s: 14pt;
     --font-size-m: 18pt;
     --font-size-l: 22pt;
     --font-size-xl: 32pt;
     --font-size-xxl: 48pt;
     --font-size-xxxl: 72pt;
 
-    --font-family-body: "Roboto", sans-serif;
+    --font-family-body: "SUSE", "Roboto", sans-serif;
 
     --spacing-xs: 2px;
     --spacing-s: 5px;
@@ -20,5 +21,5 @@
     --spacing-l: 20px;
     --spacing-xl: 40px;
     --spacing-xxl: 60px;
-    --spacing-xxxl: 120px;
+    --spacing-xxxl: 150px;
 }

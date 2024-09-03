@@ -26,6 +26,34 @@
     font-weight: bold;
 }
 
+@keyframes bounce-in-title {
+    0% {
+        transform: translateY(50px);
+        color: transparent;
+    }
+
+    50% {
+        transform: translateY(-30px);
+        color: white;
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slide-out-title {
+    0% {
+        transform: translateY(0);
+        color: white;
+    }
+
+    100% {
+        transform: translateY(30px);
+        color: transparent;
+    }
+}
+
 .homepage-info-section {
     display: flex;
 
@@ -55,12 +83,17 @@
                 flex-direction: column;
                 align-items: center;
 
+                padding: 0 var(--spacing-l);
+
                 .project-title {
                     display: none;
+                    max-width: 80%;
 
-                    padding: var(--spacing-l);
+                    padding: var(--spacing-m) 0;
 
                     font-size: var(--font-size-m);
+                    text-wrap: wrap;
+                    text-align: center;
                 }
 
                 button {
@@ -75,15 +108,25 @@
                         object-fit: cover;
 
                         border-radius: var(--spacing-xxxl);
-                        border: 0;
+                        border: var(--spacing-m) solid var(--grey-semitransparent);
                     }
                 }
             }
 
             .project-icon:hover {
+                img {
+                    border: var(--spacing-m) solid var(--grey);
+                }
+            }
+
+            .project-icon-previous {
                 .project-title {
                     display: block;
-                    color: var(--grey);
+                    color: white;
+
+                    animation-name: slide-out-title;
+                    animation-duration: 0.2s;
+                    animation-fill-mode: forwards;
                 }
             }
 
@@ -91,15 +134,20 @@
                 .project-title {
                     display: block;
                     color: white;
+
+                    animation-name: bounce-in-title;
+                    animation-duration: 0.5s;
                 }
 
-                img {
+                button img {
                     border: var(--spacing-m) solid white;
                 }
             }
 
-            .project-icon-previous {
-
+            .project-icon-current:hover {
+                img {
+                    border: var(--spacing-m) solid white;
+                }
             }
         }
 

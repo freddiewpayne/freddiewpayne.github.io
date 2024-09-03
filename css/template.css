@@ -24,7 +24,7 @@ body {
     #home-icon {
         display: flex;
         min-height: 100%;
-        margin-left: var(--spacing-l);
+        margin-left: var(--spacing-xxl);
 
         a {
             display: flex;
@@ -43,7 +43,7 @@ body {
         align-items: center;
 
         .navbar-item {
-            margin: var(--spacing-m) var(--spacing-l);
+            margin: var(--spacing-m) var(--spacing-xxl);
 
             font-size: var(--font-size-m);
             color: white;
@@ -85,6 +85,8 @@ body {
         display: flex;
         align-items: center;
 
+        margin-left: var(--spacing-xxl);
+
         .footer-link {
             height: 6vh;
             width: 6vh;
@@ -113,6 +115,6 @@ body {
 
         min-height: 8vh;
         transform: scaleX(-1);
-        margin-right: var(--spacing-l);
+        margin-right: var(--spacing-xxl);
     }
 }
