@@ -1,0 +1,120 @@
+:root {
+    font-family: var(--font-family-body);
+}
+
+body {
+    margin: 0;
+}
+
+#header-container {
+    height: 10vh;
+    width: 100vw;
+
+    background-image: url("../media/shared/cvgametitlescreenbackground.png");
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 100%;
+    width: 100%;
+
+    background-color: var(--primary-blue-semitransparent);
+    
+    #home-icon {
+        display: flex;
+        min-height: 100%;
+        margin-left: var(--spacing-l);
+
+        a {
+            display: flex;
+            justify-content: center;
+            align-self: center;
+        }
+
+        img {
+            image-rendering: pixelated;
+            min-height: 8vh;
+        }
+    }
+
+    #navbar {
+        display: flex;
+        align-items: center;
+
+        .navbar-item {
+            margin: var(--spacing-m) var(--spacing-l);
+
+            font-size: var(--font-size-m);
+            color: white;
+            text-decoration: none;
+        }
+
+        .navbar-item-cv-game {
+            font-weight: bold;
+        }
+    }
+    #navbar:hover {
+        :hover {
+            color: var(--grey);
+        }
+    }
+}
+
+#content-container {
+    min-height: 80vh;
+
+    background-color: var(--warm-white);
+
+    #content {
+        padding: var(--spacing-l);
+    }
+}
+
+#footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 10vh;
+    width: 100vw;
+
+    background-color: var(--primary-blue);
+
+    #footer-links {
+        display: flex;
+        align-items: center;
+
+        .footer-link {
+            height: 6vh;
+            width: 6vh;
+
+            margin: var(--spacing-m) var(--spacing-l);
+            border-radius: var(--spacing-xl);
+
+            text-align: center;
+            align-content: center;
+
+            background-color: white;
+
+            color: var(--primary-blue);
+            text-decoration: none;
+            font-weight: bolder;
+            font-size: var(--font-size-l);
+        }
+
+        .footer-link:hover {
+            background-color: var(--grey);
+        }
+    }
+
+    #footer-dino-image {
+        image-rendering: pixelated;
+
+        min-height: 8vh;
+        transform: scaleX(-1);
+        margin-right: var(--spacing-l);
+    }
+}
