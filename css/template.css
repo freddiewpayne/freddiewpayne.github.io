@@ -9,8 +9,6 @@ body {
 #header-container {
     height: 10vh;
     width: 100vw;
-
-    background-image: url("../media/shared/cvgametitlescreenbackground.png");
 }
 
 #header {
@@ -21,7 +19,7 @@ body {
     height: 100%;
     width: 100%;
 
-    background-color: var(--primary-blue-semitransparent);
+    background-color: var(--primary-blue);
     
     #home-icon {
         display: flex;

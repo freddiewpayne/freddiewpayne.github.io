@@ -3,12 +3,14 @@
     --primary-blue-semitransparent: #4d92bcaa;
     --warm-white: #fcf5ed;
     --grey: #cccccc;
+    --dark-semitransparent: #3e4c55ad;
 
     --font-size-s: 12pt;
     --font-size-m: 18pt;
     --font-size-l: 22pt;
     --font-size-xl: 32pt;
     --font-size-xxl: 48pt;
+    --font-size-xxxl: 72pt;
 
     --font-family-body: "Roboto", sans-serif;
 
@@ -17,4 +19,6 @@
     --spacing-m: 10px;
     --spacing-l: 20px;
     --spacing-xl: 40px;
+    --spacing-xxl: 60px;
+    --spacing-xxxl: 120px;
 }

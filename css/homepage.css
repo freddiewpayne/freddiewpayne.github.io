@@ -1,0 +1,129 @@
+:root {
+    color: white;
+}
+
+#content-container {
+    background-size: cover;
+    background-image: url("../media/homepage/PigmanWithMushrooms.png");
+
+    #content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        min-height: calc(80vh - 2 * var(--spacing-l));
+
+        background-color: var(--dark-semitransparent);
+    }
+}
+
+.homepage-main-title {
+    min-width: calc(100% - var(--spacing-xxl));
+    margin-top: var(--spacing-xxl);
+    margin-left: var(--spacing-xxl);
+
+    font-size: var(--font-size-xxxl);
+    font-weight: bold;
+}
+
+.homepage-info-section {
+    display: flex;
+
+    margin: var(--spacing-xxl);
+
+    .about-me {
+        align-self: flex-end;
+
+        max-width: 40%;
+        padding-right: var(--spacing-xl);
+
+        font-size: var(--font-size-m);
+    }
+
+    .homepage-highlights {
+        margin-left: var(--spacing-xl);
+
+        .project-icons {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+
+            margin-bottom: var(--spacing-xxl);
+
+            .project-icon {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .project-title {
+                    display: none;
+
+                    padding: var(--spacing-l);
+
+                    font-size: var(--font-size-m);
+                }
+
+                button {
+                    border: 0;
+                    outline: none;
+                    background-color: transparent;
+
+                    img {
+                        height: var(--spacing-xxxl);
+                        width: var(--spacing-xxxl);
+
+                        object-fit: cover;
+
+                        border-radius: var(--spacing-xxxl);
+                        border: 0;
+                    }
+                }
+            }
+
+            .project-icon:hover {
+                .project-title {
+                    display: block;
+                    color: var(--grey);
+                }
+            }
+
+            .project-icon-current {
+                .project-title {
+                    display: block;
+                    color: white;
+                }
+
+                img {
+                    border: var(--spacing-m) solid white;
+                }
+            }
+
+            .project-icon-previous {
+
+            }
+        }
+
+        .project-details {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .project-description {
+                padding-right: var(--spacing-xl);
+
+                font-size: var(--font-size-s);
+            }
+
+            .go-to-project-button {
+                border-radius: var(--spacing-s);
+                padding: var(--spacing-m) var(--spacing-l);
+                
+                background-color: var(--primary-blue);
+
+                font-size: var(--font-size-m);
+                color: white;
+                text-decoration: none;
+            }
+        }
+    }
+}
