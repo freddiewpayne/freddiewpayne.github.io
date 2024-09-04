@@ -157,7 +157,7 @@
             align-items: center;
 
             .project-description {
-                padding-right: var(--spacing-xl);
+                padding: 0 var(--spacing-xl);
 
                 font-size: var(--font-size-s);
             }

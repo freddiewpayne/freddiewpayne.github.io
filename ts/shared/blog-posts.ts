@@ -18,8 +18,8 @@ class BlogPost {
         this.previewDescription = previewDescription;
         this.date = date;
         this.categories = categories;
-        this.thumbnailImageRelativeUrl = "../media/blog-posts/" + id + "/thumbnail.jpg";
-        this.markdownFileRelativeUrl = "../media/blog-posts/" + id + "/content.md";
+        this.thumbnailImageRelativeUrl = "/media/blog-posts/" + id + "/thumbnail.jpg";
+        this.markdownFileRelativeUrl = "/media/blog-posts/" + id + "/content.md";
     }
 }
 

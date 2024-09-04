@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+    <head>
+        <title>freddiewpayne</title>
+        <link rel="icon" type="image/x-icon" href="/media/shared/Dino_Idle0.png" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="/css/globals.css" />
+        <link rel="stylesheet" href="/css/template.css" />
+        <link rel="stylesheet" href="/css/portfolio.css" />
+
+        <script src="/compiled-js/template.js"></script>
+        <script src="/compiled-js/shared/projects.js"></script>
+        <script src="/compiled-js/portfolio.js"></script>
+    </head>
+    <body>
+        <div class="about-me-section">
+            <div class="profile-picture">
+                <img src="/media/portfolio/me.jpg" alt="Portrait of me" />
+            </div>
+
+            <div class="profile-blurb">
+                <h2>Freddie Payne</h2>
+                
+                I have played video games since I was a child, charging through the 
+                Dragon Realms in <b>Spyro The Dragon</b>. A few years ago I decided to 
+                revisit this childhood passion and learn more about game development, and 
+                in doing so I found my career. 
+                <br/>
+                <br/>
+                Today, I am based in <b>Brighton, UK</b>.
+                <br/>
+                <br/>
+                My Skills:
+                <ul>
+                    <li>Unity and C#</li>
+                    <li>HTML, CSS, Javascript/Typescript</li>
+                    <li>Unreal (with Blueprint)</li>
+                    <li>Creative Writing and Narrative Design</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="selected-project-section">
+            <div class="selected-project-title">
+                <h2>Duck Life 9: The Flock</h2>
+            </div>
+
+            <div class="selected-project-details">
+                <embed type="text/html" src="/project-descriptions/duck-life-9.html" />
+            </div>
+
+            <div class="selected-project-details-gallery">
+                <div class="gallery-arrow" onclick="moveGallery(-1)">&lt;</div>
+                <img class="gallery-image-center" src="/media/portfolio/duck-life-9/DuckLife9_Gallery0.jpg" alt="Screenshot from Duck Life 9: The Flock" />
+                <div class="gallery-arrow" onclick="moveGallery(1)">&gt;</div>
+            </div>
+        </div>
+
+        <div class="projects-section">
+            <div class="project-icon">
+                <button onclick="loadPortfolioProject(0)">
+                    <img src="/media/homepage/ProjectIcon_DuckLife9.jpg" alt="Image of Duck Life 9: The Flock" />
+                </button>
+            </div>
+            <div class="project-icon">
+                <button onclick="loadPortfolioProject(1)">
+                    <img src="/media/homepage/ProjectIcon_Pigman.png" alt="Image of Pigman game" />
+                </button>
+            </div>
+            <div class="project-icon">
+                <button onclick="loadPortfolioProject(2)">
+                    <img src="/media/homepage/ProjectIcon_SpaceHopper.jpg" alt="Image of Space Hopper game" />
+                </button>
+            </div>
+            <div class="project-icon">
+                <button onclick="loadPortfolioProject(3)">
+                    <img src="/media/homepage/ProjectIcon_CVGame.png" alt="Image of my CV game" />
+                </button>
+            </div>
+        </div>
+    </body>
+</html>

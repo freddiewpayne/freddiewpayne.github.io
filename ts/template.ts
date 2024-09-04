@@ -42,13 +42,13 @@ const header: string = '<div id="header-container">\
                 </div>\
     \
                 <div id="navbar">\
-                    <a class="navbar-item" href="/">\
+                    <a class="navbar-item" href="/portfolio">\
                         Portfolio\
                     </a>\
-                    <a class="navbar-item" href="/">\
+                    <a class="navbar-item" href="/insights">\
                         Insights\
                     </a>\
-                    <a class="navbar-item navbar-item-cv-game" href="https://www.freddiewpayne.itch.io/cv">\
+                    <a class="navbar-item navbar-item-cv-game" href="/cv-game">\
                         Play My CV!\
                     </a>\
                 </div>\

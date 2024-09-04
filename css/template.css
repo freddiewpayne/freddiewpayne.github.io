@@ -67,6 +67,8 @@ body {
     background-color: var(--warm-white);
 
     #content {
+        min-height: calc(80vh - 2* var(--spacing-l));
+
         padding: var(--spacing-l);
     }
 }
