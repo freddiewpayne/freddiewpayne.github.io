@@ -97,6 +97,7 @@
             text-align: center;
             user-select: none;
 
+            font-family: monospace;
             font-size: var(--font-size-xl);
             color: var(--warm-white);
             font-weight: bold;
