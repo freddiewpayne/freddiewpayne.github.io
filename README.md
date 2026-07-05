@@ -1,6 +1,6 @@
 # My Website!
 
-I made this website using HTML, CSS, and TypeScript, which I've compiled down to JavaScript so that it works with GitHub Pages.
+I built this website using HTML, CSS, and TypeScript, which I've compiled down to JavaScript so that it works with GitHub Pages.
 
 # Developer Notes
 
