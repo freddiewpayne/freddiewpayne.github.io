@@ -1,0 +1,12 @@
+#cv-game-container {
+    width: calc(100vw - 2 * var(--spacing-l));
+    height: calc(80vh - 2 * var(--spacing-l));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    #unity-canvas {
+        border: var(--spacing-m) solid var(--primary-blue);
+        border-radius: var(--spacing-m);
+    }
+}
