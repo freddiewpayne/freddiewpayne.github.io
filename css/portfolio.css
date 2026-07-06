@@ -198,9 +198,11 @@
             margin-top: var(--spacing-xxxl);
             margin-bottom: var(--spacing-xxl);
 
-            .project-icon img {
-                min-height: 200px;
-                min-width: 200px;
+            .project-icon {
+                img {
+                    min-height: 150px;
+                    min-width: 150px;
+                }
             }
         }
 
@@ -228,7 +230,7 @@
         .about-me-section {
             min-width: 100%;
             margin-top: var(--spacing-xxxl);
-            font-size: var(--font-size-m);
+            font-size: var(--font-size-s);
         }
     }
 }
