@@ -47,7 +47,7 @@ body {
 
             font-size: var(--font-size-m);
             color: white;
-            text-decoration: none;
+            text-decoration: underline;
         }
 
         .navbar-item-cv-game {
@@ -63,6 +63,7 @@ body {
 
 #content-container {
     min-height: 80vh;
+    max-height: 80vh;
 
     background-color: var(--warm-white);
 
@@ -118,5 +119,15 @@ body {
         min-height: 8vh;
         transform: scaleX(-1);
         margin-right: var(--spacing-xxl);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navbar-item-cv-game {
+        display: none;
+    }
+
+    #content-container {
+        max-height: none;
     }
 }

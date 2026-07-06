@@ -20,6 +20,6 @@ function loadProject(id) {
     var selectedProjectInfo = projects[id];
     selectedProject.querySelector(".project-title").innerHTML = selectedProjectInfo.title;
     document.querySelector(".project-description").innerText = selectedProjectInfo.shortDescription;
-    document.querySelector(".go-to-project-button").href = "/projects/" + selectedProjectInfo.pageName + ".html";
+    //(document.querySelector(".go-to-project-button") as HTMLAnchorElement).href = "/projects/" + selectedProjectInfo.pageName + ".html";
 }
 //# sourceMappingURL=homepage.js.map

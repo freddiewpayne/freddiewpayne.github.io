@@ -23,8 +23,8 @@
             max-width: 200px;
             max-height: 200px;
 
-            border-radius: 9999px;
-            border: var(--spacing-m) solid var(--primary-blue);
+            border-radius: 100%;
+            border: 10px solid var(--primary-blue);
         }
     }
 
@@ -69,10 +69,12 @@
         height: 100%;
         margin-left: var(--spacing-l);
 
-        embed {
+        iframe {
             width: 100%;
             height: 100%;
             margin-left: var(--spacing-m);
+            border: none;
+            outline: none;
         }
     }
 
@@ -152,30 +154,81 @@
             img {
                 height: calc(var(--spacing-xxl) * 2);
                 width: calc(var(--spacing-xxl) * 2);
+                min-height: 100px;
+                min-width: 100px;
 
                 object-fit: cover;
 
-                border-radius: calc(var(--spacing-xxl) * 2);
-                border: var(--spacing-m) solid var(--grey-semitransparent);
+                border-radius: 100%;
+                border: 10px solid var(--grey-semitransparent);
             }
         }
     }
 
     .project-icon:hover {
         img {
-            border: var(--spacing-m) solid var(--grey);
+            border: 10px solid var(--grey);
         }
     }
 
     .project-icon-current {
         button img {
-            border: var(--spacing-m) solid var(--primary-blue);
+            border: 10px solid var(--primary-blue);
         }
     }
 
     .project-icon-current:hover {
         img {
-            border: var(--spacing-m) solid var(--primary-blue);
+            border: 10px solid var(--primary-blue);
+        }
+    }
+}
+
+#content-container {
+    @media screen and (max-width: 768px) {
+        #content {
+            flex-direction: column-reverse;
+        }
+
+        .projects-section {
+            width: 100%;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: var(--spacing-xxxl);
+            margin-bottom: var(--spacing-xxl);
+
+            .project-icon img {
+                min-height: 200px;
+                min-width: 200px;
+            }
+        }
+
+        .selected-project-section {
+            min-width: 100%;
+
+            .selected-project-title {
+                margin-bottom: var(--spacing-xxl);
+            }
+
+            .selected-project-details {
+                margin-bottom: var(--spacing-xxl);
+
+                iframe {
+                    min-height: fit-content;
+                }
+            }
+
+            .gallery-image-center {
+                max-width: calc(100vw - 150px);
+                min-height: 300px;
+            }
+        }
+
+        .about-me-section {
+            min-width: 100%;
+            margin-top: var(--spacing-xxxl);
+            font-size: var(--font-size-m);
         }
     }
 }

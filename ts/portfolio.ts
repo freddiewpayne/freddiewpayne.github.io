@@ -15,8 +15,16 @@ function loadPortfolioProject(id: number) {
     currentProjectId = id;
     var currentProject = projects[currentProjectId];
 
-    (document.querySelector(".selected-project-title h2") as HTMLHeadingElement).innerText = currentProject.title;
-    (document.querySelector(".selected-project-details embed") as HTMLEmbedElement).src = "/project-descriptions/" + currentProject.pageName + ".html";
+    var projectDescriptionIFrame = (document.querySelector(".selected-project-details iframe") as HTMLIFrameElement);
+    projectDescriptionIFrame.src = "/project-descriptions/" + currentProject.pageName + ".html";
+
+    setTimeout(() => {
+        var projectDetailsHeight = (projectDescriptionIFrame.contentDocument.body.clientHeight + 20) + "px";
+        (document.querySelector(".selected-project-title h2") as HTMLHeadingElement).innerText = currentProject.title;
+        (document.querySelector(".selected-project-details") as HTMLDivElement).style.height = projectDetailsHeight;
+        projectDescriptionIFrame.style.height = projectDetailsHeight;
+    }, 50);
+
     loadGalleryPicture(0);
 }
 

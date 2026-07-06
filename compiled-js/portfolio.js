@@ -12,8 +12,14 @@ function loadPortfolioProject(id) {
     projectIcons[id].classList.add("project-icon-current");
     currentProjectId = id;
     var currentProject = projects[currentProjectId];
-    document.querySelector(".selected-project-title h2").innerText = currentProject.title;
-    document.querySelector(".selected-project-details embed").src = "/project-descriptions/" + currentProject.pageName + ".html";
+    var projectDescriptionIFrame = document.querySelector(".selected-project-details iframe");
+    projectDescriptionIFrame.src = "/project-descriptions/" + currentProject.pageName + ".html";
+    setTimeout(() => {
+        var projectDetailsHeight = (projectDescriptionIFrame.contentDocument.body.clientHeight + 20) + "px";
+        document.querySelector(".selected-project-title h2").innerText = currentProject.title;
+        document.querySelector(".selected-project-details").style.height = projectDetailsHeight;
+        projectDescriptionIFrame.style.height = projectDetailsHeight;
+    }, 50);
     loadGalleryPicture(0);
 }
 function moveGallery(increment) {

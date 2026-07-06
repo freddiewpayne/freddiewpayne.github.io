@@ -87,7 +87,7 @@
 
                 .project-title {
                     display: none;
-                    max-width: 80%;
+                    width: 200px;
 
                     padding: var(--spacing-m) 0;
 
@@ -102,13 +102,15 @@
                     background-color: transparent;
 
                     img {
-                        height: var(--spacing-xxxl);
-                        width: var(--spacing-xxxl);
+                        /* height: var(--spacing-xxxl);
+                        width: var(--spacing-xxxl); */
+                        height: 200px;
+                        width: 200px;
 
                         object-fit: cover;
 
-                        border-radius: var(--spacing-xxxl);
-                        border: var(--spacing-m) solid var(--grey-semitransparent);
+                        border-radius: 100%;
+                        border: 10px solid var(--grey-semitransparent);
                     }
                 }
             }
@@ -140,13 +142,13 @@
                 }
 
                 button img {
-                    border: var(--spacing-m) solid white;
+                    border: 10px solid white;
                 }
             }
 
             .project-icon-current:hover {
                 img {
-                    border: var(--spacing-m) solid white;
+                    border: 10px solid white;
                 }
             }
         }
@@ -157,6 +159,7 @@
             align-items: center;
 
             .project-description {
+                height: calc(var(--spacing-xl) * 2);
                 padding: 0 var(--spacing-xl);
 
                 font-size: var(--font-size-s);
@@ -172,6 +175,39 @@
                 color: white;
                 text-decoration: none;
             }
+        }
+    }
+}
+
+#content-container {
+    @media screen and (max-width: 768px) {
+        #content {
+            justify-content: start;
+        }
+
+        .homepage-info-section {
+            flex-direction: column;
+
+            .about-me {
+                min-width: 100%;
+                align-self: flex-start;
+                margin-bottom: calc(var(--spacing-xxxl) * 2);
+            }
+        }
+
+        .project-icons {
+            flex-wrap: wrap;
+            margin-bottom: 0;
+
+            .project-icon {
+                margin-bottom: var(--spacing-xxxl);
+            }
+        }
+
+        .project-description {
+            height: fit-content;
+            margin-bottom: var(--spacing-xxl);
+            font-size: var(--font-size-m);
         }
     }
 }
